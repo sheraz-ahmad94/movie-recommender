@@ -59,7 +59,7 @@ def add_other_filters_to_url(url, filter_type, user_input):
 auth_url = f"{BASE_URL}/authentication"
 header = {
     "accept": 'application/json',
-    "Authorization": "Bearer PASTE_YOUR_API_READ_ACCESS_TOKEN_HERE"
+    "Authorization": "Bearer {PASTE_YOUR_API_READ_ACCESS_TOKEN_HERE}"
 }
 
 response = requests.get(auth_url, headers=header)
